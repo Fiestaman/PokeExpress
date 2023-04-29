@@ -1,4 +1,5 @@
 const React = require("react");
+const Nav = require("./components/Nav");
 
 const myStyle = {
   color: "#ffffff",
@@ -11,6 +12,8 @@ class Index extends React.Component {
     return (
       <div>
         <h1 style={myStyle}>See All The Pokemon!</h1>
+        {/* <a href="/pokemon/new">Create New Pokemon</a> */}
+        <Nav link="/pokemon/new" text="Create New Pokemon" />
         <ul>
           {pokemons.map((pokemon, i) => {
             return (

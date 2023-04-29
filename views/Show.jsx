@@ -1,4 +1,5 @@
 const React = require("react");
+const Nav = require("./components/Nav");
 
 const myStyle = {
   color: "#ffffff",
@@ -13,7 +14,7 @@ class Show extends React.Component {
         <h1 style={myStyle}>Gotta Catch 'Em All!</h1>
         <h2>{pokemon.name[0].toUpperCase() + pokemon.name.slice(1)}</h2>
         <img src={pokemon.img + ".jpg"} alt={pokemon.name} /> <br />
-        <a href="/pokemon">Back</a>
+        <Nav link="/pokemon" text="Back" />
       </div>
     );
   }

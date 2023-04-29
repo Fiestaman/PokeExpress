@@ -1,5 +1,5 @@
 const React = require("react");
-const Nav = require("../components/Nav");
+const Nav = require("./components/Nav");
 
 class New extends React.Component {
   render() {
@@ -9,8 +9,8 @@ class New extends React.Component {
         <form action="/pokemon" method="POST">
           Name: <input type="text" name="name" />
           <br />
-          Image: <input type="text" name="img" />
-          <br />
+          {/* Image: <input type="text" name="img" />
+          <br /> */}
           <input type="submit" name="" value="Create Pokemon" />
         </form>
         <Nav link="/pokemon" text="Back" />
